@@ -21,7 +21,7 @@ def remain():
     year_end = date(current_date.year, 12, 31)
     return(year_end - current_date).days
 
-days =round((current_year - birth_year) * 365.24)
+days = round((current_year - birth_year) * 365.24)
 
 if name:
     print("---Profile Card----")

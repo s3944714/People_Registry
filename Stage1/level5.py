@@ -41,20 +41,21 @@ class profile:
         self.name = name
         self.age = age
         self.days = days
+        
     def age_group(self,):
         if age < 12:
-            print("Child")
+            return("Child")
         elif 12 <= age < 18:
-            print("Teenager")
+            return("Teenager")
             age >= 18
         else:
-            print("Adult")
+            return("Adult")
 
     def print(self):
         print("---Profile Card----")
         print(f"Name:{self.name}")
         print(f"Age:{self.age}")
-        print(f"Age_Group:{self.age_group()}")
+        print(f"Age Group:{self.age_group()}")
         print(f"Age next year:{self.age+1}")
         print(f"Age in Months:{self.age*12}")
         print(f"Age in days:{self.days}")
